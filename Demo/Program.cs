@@ -1,6 +1,6 @@
 ﻿using EntityFrameworkCore.DbContextScope;
 using Microsoft.EntityFrameworkCore;
-using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Diagnostics;
 using Numero3.EntityFramework.Demo.BusinessLogicServices;
 using Numero3.EntityFramework.Demo.CommandModel;
 using Numero3.EntityFramework.Demo.DatabaseContext;
