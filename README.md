@@ -3,7 +3,7 @@
 This is a fork from [tncalvert/DbContextScope](https://github.com/tncalvert/DbContextScope). The biggest innovation is the `multitarget support`.
 
 - `.NET Framework v4.6.1` -> **Microsoft.EntityFrameworkCore v2.x**
-- `.NET CoreApp v2.0` -> **Microsoft.EntityFrameworkCore v3.x**
+- `.NET CoreApp v2.0` -> **Microsoft.EntityFrameworkCore v2.x**
 - `.NET CoreApp v3.0` -> **Microsoft.EntityFrameworkCore v3.x**
 
 ## Nuget
