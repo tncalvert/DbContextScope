@@ -2,10 +2,9 @@
 using System.Linq;
 using System.Threading;
 using System.Threading.Tasks;
-using DbContextScope.DemoConsoleApp.DatabaseContext;
-using EntityFrameworkCore.DbContextScope;
+using EntityFrameworkCore.DbContextScope.Test.DatabaseContext;
 
-namespace DbContextScope.DemoConsoleApp.BusinessLogicServices {
+namespace EntityFrameworkCore.DbContextScope.Test.BusinessLogicServices {
     public class UserCreditScoreService {
         private readonly IDbContextScopeFactory _dbContextScopeFactory;
 

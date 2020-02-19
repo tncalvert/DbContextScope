@@ -1,8 +1,8 @@
 ﻿using System;
 using System.Threading.Tasks;
-using DbContextScope.DemoConsoleApp.DomainModel;
+using EntityFrameworkCore.DbContextScope.Test.DomainModel;
 
-namespace DbContextScope.DemoConsoleApp.Repositories {
+namespace EntityFrameworkCore.DbContextScope.Test.Repositories {
     public interface IUserRepository {
         User Get(Guid userId);
         Task<User> GetAsync(Guid userId);

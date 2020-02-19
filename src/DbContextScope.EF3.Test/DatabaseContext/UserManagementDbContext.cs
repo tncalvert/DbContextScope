@@ -1,7 +1,7 @@
-﻿using DbContextScope.DemoConsoleApp.DomainModel;
+﻿using EntityFrameworkCore.DbContextScope.Test.DomainModel;
 using Microsoft.EntityFrameworkCore;
 
-namespace DbContextScope.DemoConsoleApp.DatabaseContext {
+namespace EntityFrameworkCore.DbContextScope.Test.DatabaseContext {
     public class UserManagementDbContext : DbContext {
         // Map our 'User' model by convention
         public DbSet<User> Users { get; set; }

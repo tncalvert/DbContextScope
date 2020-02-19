@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Collections.Generic;
-using DbContextScope.DemoConsoleApp.DatabaseContext;
-using DbContextScope.DemoConsoleApp.DomainModel;
-using EntityFrameworkCore.DbContextScope;
+using EntityFrameworkCore.DbContextScope.Test.DatabaseContext;
+using EntityFrameworkCore.DbContextScope.Test.DomainModel;
 
-namespace DbContextScope.DemoConsoleApp.BusinessLogicServices {
+namespace EntityFrameworkCore.DbContextScope.Test.BusinessLogicServices {
     public class UserEmailService {
         private readonly IDbContextScopeFactory _dbContextScopeFactory;
 

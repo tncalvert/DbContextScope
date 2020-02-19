@@ -5,11 +5,11 @@
     <Company>Dominic Jonas</Company>
     <Product>DoJo.EntityFrameworkCore.DbContextScope</Product>
     <PackageProjectUrl>https://github.com/dojo90/DbContextScope</PackageProjectUrl>
-    <PackageLicenseUrl>https://raw.githubusercontent.com/dojo90/DbContextScope/master/LICENSE</PackageLicenseUrl>
+    <PackageLicense>https://raw.githubusercontent.com/dojo90/DbContextScope/master/LICENSE</PackageLicense>
     <RepositoryUrl>git@github.com:dojo90/DbContextScope.git</RepositoryUrl>
     <RepositoryType>git</RepositoryType>
     <PackageTags>sentinel nlog</PackageTags>
-    <Description>DbContextScope for EF Core. Forked from https://github.com/tncalvert/DbContextScope. </Description>
+    <Description>DbContextScope for EF v2|v3 Core. Forked from https://github.com/tncalvert/DbContextScope. </Description>
     <PackageTags>EntityFramework EFCore DbContext DbContextScope</PackageTags>
   </PropertyGroup>
 

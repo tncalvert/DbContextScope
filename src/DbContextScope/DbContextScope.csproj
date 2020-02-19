@@ -1,31 +1,17 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFrameworks>net461;netcoreapp2.0;netcoreapp3.0</TargetFrameworks>
+    <TargetFramework>netstandard2.0</TargetFramework>
     <AssemblyName>DoJo.EntityFrameworkCore.DbContextScope</AssemblyName>
     <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
     <RootNamespace>DoJo.EntityFrameworkCore.DbContextScope</RootNamespace>
   </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'net461'">
-    <DefineConstants>NET461;NETFULL</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp2.0'">
-    <DefineConstants>NETCORE;NETSTANDARD;NETCOREAPP2_0</DefineConstants>
-  </PropertyGroup>
-  <PropertyGroup Condition=" '$(TargetFramework)' == 'netcoreapp3.0'">
-    <DefineConstants>NETCORE;NETSTANDARD;NETCOREAPP3_0</DefineConstants>
-  </PropertyGroup>
 
-  <ItemGroup Condition="'$(TargetFramework)' == 'net461' or '$(TargetFramework)' == 'netcoreapp2.0'">
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.*" />
-  </ItemGroup>
-  <ItemGroup Condition="'$(TargetFramework)' == 'netcoreapp3.0'">
-    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.*" />
-  </ItemGroup>
   <ItemGroup>
     <PackageReference Include="GitVersionTask" Version="5.1.2">
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="2.0.0" />
   </ItemGroup>
 </Project>

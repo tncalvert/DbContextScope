@@ -44,12 +44,14 @@ namespace EntityFrameworkCore.DbContextScope.Test.Repositories {
 
         public Task<User> GetAsync(Guid userId) 
         {
-#if NETCOREAPP2_0 || NET461
-            return DbContext.Users.FindAsync(userId);
-#endif
-#if NETCOREAPP3_0
             return DbContext.Users.FindAsync(userId).AsTask();
-#endif
+
+//#if NETCOREAPP2_0 || NET461
+//            return DbContext.Users.FindAsync(userId);
+//#endif
+//#if NETCOREAPP3_0
+//            return DbContext.Users.FindAsync(userId).AsTask();
+//#endif
         }
 
         public void Add(User user) {

@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace DbContextScope.DemoConsoleApp.DomainModel {
+namespace EntityFrameworkCore.DbContextScope.Test.DomainModel {
     // Anemic model to keep this demo application simple.
     public class User {
         public Guid Id { get; set; }

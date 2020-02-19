@@ -1,10 +1,9 @@
 ﻿using System;
 using System.Threading.Tasks;
-using DbContextScope.DemoConsoleApp.DatabaseContext;
-using DbContextScope.DemoConsoleApp.DomainModel;
-using EntityFrameworkCore.DbContextScope;
+using EntityFrameworkCore.DbContextScope.Test.DatabaseContext;
+using EntityFrameworkCore.DbContextScope.Test.DomainModel;
 
-namespace DbContextScope.DemoConsoleApp.Repositories {
+namespace EntityFrameworkCore.DbContextScope.Test.Repositories {
     /*
 	 * An example "repository" relying on an ambient DbContext instance.
 	 * 
@@ -45,12 +44,14 @@ namespace DbContextScope.DemoConsoleApp.Repositories {
 
         public Task<User> GetAsync(Guid userId) 
         {
-#if NETCOREAPP2_0 || NET461
             return DbContext.Users.FindAsync(userId);
-#endif
-#if NETCOREAPP3_0
-            return DbContext.Users.FindAsync(userId).AsTask();
-#endif
+
+//#if NETCOREAPP2_0 || NET461
+//            return DbContext.Users.FindAsync(userId);
+//#endif
+//#if NETCOREAPP3_0
+//            return DbContext.Users.FindAsync(userId).AsTask();
+//#endif
         }
 
         public void Add(User user) {

@@ -1,10 +1,15 @@
 ## Foreword
 
-This is a fork from [tncalvert/DbContextScope](https://github.com/tncalvert/DbContextScope). The biggest innovation is the `multitarget support`.
+This is a fork from [tncalvert/DbContextScope](https://github.com/tncalvert/DbContextScope). The target framework is `.NET Standart2.0` and minimum `Microsoft.EntityFrameworkCore` version is `v2.0.0`.
 
-- `.NET Framework v4.6.1` -> **Microsoft.EntityFrameworkCore v2.x**
-- `.NET CoreApp v2.0` -> **Microsoft.EntityFrameworkCore v2.x**
-- `.NET CoreApp v3.0` -> **Microsoft.EntityFrameworkCore v3.x**
+If you use this library in your project, please note to use same `nuget versions`! The `DbContextScope` uses `Microsoft.EntityFrameworkCore.Relational v2.0.0`!
+
+Example `*.csproj` to use `v3.1.1`:
+
+```xml
+<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.1" />
+<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
+```
 
 ## Nuget
 
