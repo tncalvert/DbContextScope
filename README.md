@@ -1,12 +1,29 @@
-DbContextScope
-==============
+## Foreword
 
-```
-2017-09-29 - tncalvert
-This is a fork to support Entity Framework Core.
-As of right now, the project targets .NET 4.6.1.
+This is a fork from [tncalvert/DbContextScope](https://github.com/tncalvert/DbContextScope). The target framework is `.NET Standart2.0` and minimum `Microsoft.EntityFrameworkCore` version is `v2.0.0`.
+
+If you use this library in your project, please note to use same `nuget versions`! The `DbContextScope` uses `Microsoft.EntityFrameworkCore.Relational v2.0.0`!
+
+Example `*.csproj` to use `v3.1.1`:
+
+```xml
+<PackageReference Include="Microsoft.EntityFrameworkCore.Relational" Version="3.1.1" />
+<PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.1" />
 ```
 
+## Nuget
+
+[![NuGet](https://img.shields.io/nuget/v/DoJo.EntityFrameworkCore.DbContextScope.svg "nuget")](https://www.nuget.org/packages/DoJo.EntityFrameworkCore.DbContextScope)
+[![NuGetDownloads](https://img.shields.io/nuget/dt/DoJo.EntityFrameworkCore.DbContextScope.svg "nuget downloads")](https://www.nuget.org/packages/DoJo.EntityFrameworkCore.DbContextScope)
+
+A NuGet-package is available [here](https://nuget.org/packages/DoJo.EntityFrameworkCore.DbContextScope/).
+
+
+## Contributors
+
+Feel free to make a PullRequest or open an Issue to extend this library!
+
+# DbContextScope
 A simple and flexible way to manage your Entity Framework DbContext instances.
 
 `DbContextScope` was created out of the need for a better way to manage DbContext instances in Entity Framework-based applications. 
